@@ -81,7 +81,7 @@ module Slate
 
     def url_options
       options = []
-      options += @targets.map { |t| ["target", t.to_s] }
+      options += @targets.map { |t| ["target[]", t.to_s] }
       options << ["from", @from]   if @from
       options << ["until", @until] if @until
       options
